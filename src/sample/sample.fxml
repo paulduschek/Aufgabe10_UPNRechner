@@ -1,8 +1,35 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="-1.0" layoutY="1.0" prefHeight="26.0" prefWidth="600.0" />
+      <Button layoutX="212.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="7" />
+      <Button layoutX="300.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="8" />
+      <Button layoutX="388.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="9" />
+      <Button layoutX="212.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="4" />
+      <Button layoutX="300.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="5" />
+      <Button layoutX="388.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="6" />
+      <Button layoutX="212.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="1" />
+      <Button layoutX="300.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="2" />
+      <Button layoutX="388.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="3" />
+      <Button layoutX="212.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="0" />
+      <Button layoutX="300.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="." />
+      <Button layoutX="388.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="-" />
+      <Button layoutX="476.0" layoutY="27.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="Enter" />
+      <Button layoutX="476.0" layoutY="85.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="C" />
+      <Button layoutX="476.0" layoutY="143.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="CE" />
+      <Button layoutX="476.0" layoutY="201.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="+" />
+      <Button layoutX="476.0" layoutY="267.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="*" />
+      <Button layoutX="476.0" layoutY="333.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="1/x" />
+      <Button layoutX="538.0" layoutY="333.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="x &lt;-&gt; y" />
+      <Button layoutX="538.0" layoutY="201.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="-" />
+      <Button layoutX="538.0" layoutY="267.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="/" />
+      <TextArea layoutY="27.0" prefHeight="365.0" prefWidth="210.0" />
+   </children>
+</AnchorPane>
