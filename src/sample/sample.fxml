@@ -8,28 +8,28 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextField layoutX="-1.0" layoutY="1.0" prefHeight="26.0" prefWidth="600.0" />
-      <Button layoutX="212.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="7" />
-      <Button layoutX="300.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="8" />
-      <Button layoutX="388.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="9" />
-      <Button layoutX="212.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="4" />
-      <Button layoutX="300.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="5" />
-      <Button layoutX="388.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="6" />
-      <Button layoutX="212.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="1" />
-      <Button layoutX="300.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="2" />
-      <Button layoutX="388.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="3" />
-      <Button layoutX="212.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="0" />
-      <Button layoutX="300.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="." />
-      <Button layoutX="388.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="-" />
-      <Button layoutX="476.0" layoutY="27.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="Enter" />
-      <Button layoutX="476.0" layoutY="85.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="C" />
-      <Button layoutX="476.0" layoutY="143.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="CE" />
-      <Button layoutX="476.0" layoutY="201.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="+" />
-      <Button layoutX="476.0" layoutY="267.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="*" />
-      <Button layoutX="476.0" layoutY="333.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="1/x" />
-      <Button layoutX="538.0" layoutY="333.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="x &lt;-&gt; y" />
-      <Button layoutX="538.0" layoutY="201.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="-" />
-      <Button layoutX="538.0" layoutY="267.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="/" />
-      <TextArea layoutY="27.0" prefHeight="365.0" prefWidth="210.0" />
+      <TextField fx:id="TextField" layoutX="-1.0" layoutY="1.0" prefHeight="26.0" prefWidth="600.0" />
+      <Button fx:id="button7" layoutX="212.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="7" />
+      <Button fx:id="button8" layoutX="300.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="8" />
+      <Button fx:id="button9" layoutX="388.0" layoutY="27.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="9" />
+      <Button fx:id="button4" layoutX="212.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="4" />
+      <Button fx:id="button5" layoutX="300.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="5" />
+      <Button fx:id="button6" layoutX="388.0" layoutY="118.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="6" />
+      <Button fx:id="button1" layoutX="212.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="1" />
+      <Button fx:id="button2" layoutX="300.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="2" />
+      <Button fx:id="button3" layoutX="388.0" layoutY="209.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="3" />
+      <Button fx:id="button0" layoutX="212.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="0" />
+      <Button fx:id="buttonPoint" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="." />
+      <Button fx:id="buttonMinus" layoutX="388.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="-" />
+      <Button fx:id="buttonEnter" layoutX="476.0" layoutY="27.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="Enter" />
+      <Button fx:id="buttonC" layoutX="476.0" layoutY="85.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="C" />
+      <Button fx:id="buttonCE" layoutX="476.0" layoutY="143.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="122.0" text="CE" />
+      <Button fx:id="buttonPlusCalc" layoutX="476.0" layoutY="201.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="+" />
+      <Button fx:id="buttonMultiplied" layoutX="476.0" layoutY="267.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="*" />
+      <Button fx:id="buttonStackEntry" layoutX="476.0" layoutY="333.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="1/x" />
+      <Button fx:id="buttonChangeStackNr" layoutX="538.0" layoutY="333.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="x &lt;-&gt; y" />
+      <Button fx:id="buttonMinusCalc" layoutX="538.0" layoutY="201.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="-" />
+      <Button fx:id="buttonDivided" layoutX="538.0" layoutY="267.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="62.0" text="/" />
+      <TextArea fx:id="TextArea" layoutY="27.0" prefHeight="365.0" prefWidth="210.0" />
    </children>
 </AnchorPane>
