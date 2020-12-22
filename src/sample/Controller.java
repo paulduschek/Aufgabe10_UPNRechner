@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -38,7 +39,7 @@ public class Controller implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(Controller.class.getResource("sample.fxml"));
             Parent root = fxmlLoader.load();
             stage.setTitle("Aufgabe 10 - Duschek");
-            stage.setScene(new Scene(root, 600, 395));
+            stage.setScene(new Scene(root, 600, 415));
             stage.show();
         }
         catch (IOException ex) {
@@ -64,6 +65,7 @@ public class Controller implements Initializable {
     @FXML private Button buttonPoint;
     @FXML private Button buttonMinus;
 
+    @FXML private Label error;
     //Text Field and Area
     @FXML private TextField textfield;
     @FXML private TextArea textarea;
@@ -172,7 +174,7 @@ public class Controller implements Initializable {
         }
         catch (Exception ex)
         {
-            System.out.println("an error occured!");
+            error.setText("an error occured!");
         }
     }
 
@@ -188,7 +190,7 @@ public class Controller implements Initializable {
         }
         catch (Exception ex)
         {
-            System.out.println("an error occured!");
+            error.setText("an error occured!");
         }
     }
 
@@ -204,7 +206,7 @@ public class Controller implements Initializable {
         }
         catch (Exception ex)
         {
-            System.out.println("an error occured!");
+            error.setText("an error occured!");
         }
     }
 
@@ -220,7 +222,7 @@ public class Controller implements Initializable {
         }
         catch (Exception ex)
         {
-            System.out.println("an error occured!");
+            error.setText("an error occured!");
         }
     }
 
@@ -235,7 +237,7 @@ public class Controller implements Initializable {
         }
         catch (Exception ex)
         {
-            System.out.println("an error occured!");
+            error.setText("an error occured!");
         }
     }
 
@@ -251,7 +253,7 @@ public class Controller implements Initializable {
         }
         catch (Exception ex)
         {
-            System.out.println("an error occured!");
+            error.setText("an error occured!");
         }
     }
 }
