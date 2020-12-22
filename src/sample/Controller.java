@@ -24,8 +24,9 @@ public class Controller implements Initializable {
 
     Stage stage;
     Model model;
-    Stack stack = new Stack();
+    Stack<String> stack = new Stack<String>();
     StringBuilder sb = new StringBuilder();
+    StringBuilder sb1 = new StringBuilder();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -135,9 +136,58 @@ public class Controller implements Initializable {
     public void Enter()
     {
         stack.push(sb.toString());
-        textarea.setText(sb.toString());
+        sb1.append(String.format("%s %n", sb));
+        textarea.setText(sb1.toString());
         textfield.clear();
+        sb.delete(0, sb.length());
     }
 
-    
+    @FXML
+    public void C()
+    {
+        textarea.clear();
+        textfield.clear();
+        sb.delete(0, sb.length());
+        sb1.delete(0, sb1.length());
+        stack.clear();
+    }
+
+    @FXML
+    public void CE()
+    {
+        textfield.clear();
+        sb.delete(0, sb.length());
+    }
+
+    @FXML
+    public void plus()
+    {
+        try{
+            double pop1 = Double.parseDouble(stack.pop());
+            double pop2 = Double.parseDouble((stack.pop()));
+            double result = pop1 + pop2;
+            stack.push(String.valueOf(result));
+            textarea.setText(String.valueOf(result));
+        }
+        catch (Exception ex)
+        {
+            System.out.println("an error occured!");
+        }
+    }
+
+    @FXML
+    public void minus()
+    {
+        try{
+            double pop1 = Double.parseDouble(stack.pop());
+            double pop2 = Double.parseDouble((stack.pop()));
+            double result = pop2 - pop1;
+            stack.push(String.valueOf(result));
+            textarea.setText(String.valueOf(result));
+        }
+        catch (Exception ex)
+        {
+            System.out.println("an error occured!");
+        }
+    }
 }
