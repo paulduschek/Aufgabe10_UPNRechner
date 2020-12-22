@@ -1,6 +1,6 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
-import sample.Controller;
+import sample.Model;
 
 /**
  * @author Paul Duschek
@@ -11,7 +11,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage s) throws Exception{
-        Controller.show(s);
+        Model.show(s);
     }
 
     public static void main(String[] args) {

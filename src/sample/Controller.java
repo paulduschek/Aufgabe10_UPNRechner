@@ -21,34 +21,13 @@ import java.util.ResourceBundle;
 import java.util.Stack;
 
 
-public class Controller implements Initializable {
+public class Controller {
 
     Stage stage;
     Model model;
     Stack<String> stack = new Stack<String>();
     StringBuilder sb = new StringBuilder();
     StringBuilder sb1 = new StringBuilder();
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        model = new Model();
-    }
-
-    public static void show(Stage stage) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(Controller.class.getResource("sample.fxml"));
-            Parent root = fxmlLoader.load();
-            stage.setTitle("Aufgabe 10 - Duschek");
-            stage.setScene(new Scene(root, 600, 415));
-            stage.show();
-        }
-        catch (IOException ex) {
-            //Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
-            System.err.println("Something wrong with sample.fxml!");
-            ex.printStackTrace(System.err);
-            System.exit(1);
-        }
-    }
 
     //FXML implementations Buttons
     @FXML private Button button0;
