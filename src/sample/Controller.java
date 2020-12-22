@@ -25,6 +25,7 @@ public class Controller implements Initializable {
     Stage stage;
     Model model;
     Stack stack = new Stack();
+    StringBuilder sb = new StringBuilder();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -72,57 +73,71 @@ public class Controller implements Initializable {
     @FXML private Button buttonMinus;
 
     //Text Field and Area
-    @FXML private TextField TextField;
-    @FXML private TextArea TextArea;
+    @FXML private TextField textfield;
+    @FXML private TextArea textarea;
 
     @FXML
     public void getNumber()
     {
-        if(button0.isPressed())
+        if(button0.isArmed())
         {
-            stack.push(0);
+            sb.append(0);
+            textfield.setText(sb.toString());
         }
-        else if(button1.isPressed())
+        else if(button1.isArmed())
         {
-            stack.push(1);
+            sb.append(1);
+            textfield.setText(sb.toString());
         }
-        else if(button2.isPressed())
+        else if(button2.isArmed())
         {
-            stack.push(2);
+            sb.append(2);
+            textfield.setText(sb.toString());
         }
-        else if(button3.isPressed())
+        else if(button3.isArmed())
         {
-            stack.push(3);
+            sb.append(3);
+            textfield.setText(sb.toString());
         }
-        else if(button4.isPressed())
+        else if(button4.isArmed())
         {
-            stack.push(4);
+            sb.append(4);
+            textfield.setText(sb.toString());
         }
-        else if(button5.isPressed())
+        else if(button5.isArmed())
         {
-            stack.push(5);
+            sb.append(5);
+            textfield.setText(sb.toString());
         }
-        else if(button6.isPressed())
+        else if(button6.isArmed())
         {
-            stack.push(6);
+            sb.append(6);
+            textfield.setText(sb.toString());
         }
-        else if(button7.isPressed())
+        else if(button7.isArmed())
         {
-            stack.push(7);
+            sb.append(7);
+            textfield.setText(sb.toString());
         }
-        else if(button8.isPressed())
+        else if(button8.isArmed())
         {
-            stack.push(8);
+            sb.append(8);
+            textfield.setText(sb.toString());
         }
-        else if(button9.isPressed())
+        else if(button9.isArmed())
         {
-            stack.push(9);
+            sb.append(9);
+            textfield.setText(sb.toString());
         }
     }
 
     @FXML
     public void Enter()
     {
-
+        stack.push(sb.toString());
+        textarea.setText(sb.toString());
+        textfield.clear();
     }
+
+    
 }
