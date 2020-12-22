@@ -61,15 +61,6 @@ public class Controller implements Initializable {
     @FXML private Button button8;
     @FXML private Button button9;
 
-    @FXML private Button buttonEnter;
-    @FXML private Button buttonC;
-    @FXML private Button buttonCE;
-    @FXML private Button buttonPlusCalc;
-    @FXML private Button buttonMinusCalc;
-    @FXML private Button buttonMultiplied;
-    @FXML private Button buttonDivided;
-    @FXML private Button buttonStackEntry;
-    @FXML private Button buttonChangeStackNr;
     @FXML private Button buttonPoint;
     @FXML private Button buttonMinus;
 
@@ -80,6 +71,16 @@ public class Controller implements Initializable {
     @FXML
     public void getNumber()
     {
+        if(buttonPoint.isArmed())
+        {
+            sb.append(".");
+            textfield.setText(sb.toString());
+        }
+        if(buttonMinus.isArmed())
+        {
+            sb.append("-");
+            textfield.setText(sb.toString());
+        }
         if(button0.isArmed())
         {
             sb.append(0);
@@ -216,6 +217,37 @@ public class Controller implements Initializable {
             double result = pop2 / pop1;
             stack.push(String.valueOf(result));
             textarea.setText(String.valueOf(result));
+        }
+        catch (Exception ex)
+        {
+            System.out.println("an error occured!");
+        }
+    }
+
+    @FXML
+    public void stackEntry()
+    {
+        try{
+            double pop = Double.parseDouble(stack.pop());
+            double reciprocal = 1 / pop;
+            stack.push(String.valueOf(reciprocal));
+            textarea.setText(String.valueOf(reciprocal));
+        }
+        catch (Exception ex)
+        {
+            System.out.println("an error occured!");
+        }
+    }
+
+    @FXML
+    public void changeStackNr()
+    {
+        try {
+            double pop1 = Double.parseDouble(stack.pop());
+            double pop2 = Double.parseDouble(stack.pop());
+            stack.push(String.valueOf(pop2));
+            stack.push(String.valueOf(pop1));
+            textarea.setText(String.valueOf(stack));
         }
         catch (Exception ex)
         {

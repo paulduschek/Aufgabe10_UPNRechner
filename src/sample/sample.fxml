@@ -18,15 +18,15 @@
       <Button fx:id="button2" layoutX="300.0" layoutY="209.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="91.0" prefWidth="88.0" text="2" />
       <Button fx:id="button3" layoutX="388.0" layoutY="209.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="91.0" prefWidth="88.0" text="3" />
       <Button fx:id="button0" layoutX="212.0" layoutY="300.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="91.0" prefWidth="88.0" text="0" />
-      <Button fx:id="buttonPoint" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="." />
-      <Button fx:id="buttonMinus" layoutX="388.0" layoutY="300.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="88.0" text="-" />
+      <Button fx:id="buttonPoint" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="91.0" prefWidth="88.0" text="." />
+      <Button fx:id="buttonMinus" layoutX="388.0" layoutY="300.0" mnemonicParsing="false" onAction="#getNumber" prefHeight="91.0" prefWidth="88.0" text="-" />
       <Button fx:id="buttonEnter" layoutX="476.0" layoutY="27.0" mnemonicParsing="false" onAction="#Enter" prefHeight="58.0" prefWidth="122.0" text="Enter" />
       <Button fx:id="buttonC" layoutX="476.0" layoutY="85.0" mnemonicParsing="false" onAction="#C" prefHeight="58.0" prefWidth="122.0" text="C" />
       <Button fx:id="buttonCE" layoutX="476.0" layoutY="143.0" mnemonicParsing="false" onAction="#CE" prefHeight="58.0" prefWidth="122.0" text="CE" />
       <Button fx:id="buttonPlusCalc" layoutX="476.0" layoutY="201.0" mnemonicParsing="false" onAction="#plus" prefHeight="65.0" prefWidth="62.0" text="+" />
       <Button fx:id="buttonMultiplied" layoutX="476.0" layoutY="267.0" mnemonicParsing="false" onAction="#multiply" prefHeight="65.0" prefWidth="62.0" text="*" />
-      <Button fx:id="buttonStackEntry" layoutX="476.0" layoutY="333.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="1/x" />
-      <Button fx:id="buttonChangeStackNr" layoutX="538.0" layoutY="333.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" text="x &lt;-&gt; y" />
+      <Button fx:id="buttonStackEntry" layoutX="476.0" layoutY="333.0" mnemonicParsing="false" onAction="#stackEntry" prefHeight="58.0" prefWidth="62.0" text="1/x" />
+      <Button fx:id="buttonChangeStackNr" layoutX="538.0" layoutY="333.0" mnemonicParsing="false" onAction="#changeStackNr" prefHeight="58.0" prefWidth="62.0" text="x &lt;-&gt; y" />
       <Button fx:id="buttonMinusCalc" layoutX="538.0" layoutY="201.0" mnemonicParsing="false" onAction="#minus" prefHeight="65.0" prefWidth="62.0" text="-" />
       <Button fx:id="buttonDivided" layoutX="538.0" layoutY="267.0" mnemonicParsing="false" onAction="#divided" prefHeight="65.0" prefWidth="62.0" text="/" />
       <TextArea fx:id="textarea" layoutY="27.0" prefHeight="365.0" prefWidth="210.0" />
