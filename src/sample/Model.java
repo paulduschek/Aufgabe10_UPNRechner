@@ -12,19 +12,6 @@ import javafx.stage.Stage;
 
 import java.util.Stack;
 
-public class Model extends Application {
+public class Model{
 
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 600, 395));
-        primaryStage.show();
-    }
-
-
-    public static void main(String[] args) {
-        launch(args);
-    }
 }

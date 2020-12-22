@@ -36,7 +36,7 @@ public class Controller implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(Controller.class.getResource("sample.fxml"));
             Parent root = fxmlLoader.load();
             stage.setTitle("Aufgabe 10 - Duschek");
-            stage.setScene(new Scene(root, 600, 300));
+            stage.setScene(new Scene(root, 600, 395));
             stage.show();
         }
         catch (IOException ex) {
@@ -48,55 +48,32 @@ public class Controller implements Initializable {
     }
 
     //FXML implementations Buttons
-    @FXML
-    private Button button0;
-    @FXML
-    private Button button1;
-    @FXML
-    private Button button2;
-    @FXML
-    private Button button3;
-    @FXML
-    private Button button4;
-    @FXML
-    private Button button5;
-    @FXML
-    private Button button6;
-    @FXML
-    private Button button7;
-    @FXML
-    private Button button8;
-    @FXML
-    private Button button9;
+    @FXML private Button button0;
+    @FXML private Button button1;
+    @FXML private Button button2;
+    @FXML private Button button3;
+    @FXML private Button button4;
+    @FXML private Button button5;
+    @FXML private Button button6;
+    @FXML private Button button7;
+    @FXML private Button button8;
+    @FXML private Button button9;
 
-    @FXML
-    private Button buttonEnter;
-    @FXML
-    private Button buttonC;
-    @FXML
-    private Button buttonCE;
-    @FXML
-    private Button buttonPlusCalc;
-    @FXML
-    private Button buttonMinusCalc;
-    @FXML
-    private Button buttonMultiplied;
-    @FXML
-    private Button buttonDivided;
-    @FXML
-    private Button buttonStackEntry;
-    @FXML
-    private Button buttonChangeStackNr;
-    @FXML
-    private Button buttonPoint;
-    @FXML
-    private Button buttonMinus;
+    @FXML private Button buttonEnter;
+    @FXML private Button buttonC;
+    @FXML private Button buttonCE;
+    @FXML private Button buttonPlusCalc;
+    @FXML private Button buttonMinusCalc;
+    @FXML private Button buttonMultiplied;
+    @FXML private Button buttonDivided;
+    @FXML private Button buttonStackEntry;
+    @FXML private Button buttonChangeStackNr;
+    @FXML private Button buttonPoint;
+    @FXML private Button buttonMinus;
 
     //Text Field and Area
-    @FXML
-    private TextField TextField;
-    @FXML
-    private TextArea TextArea;
+    @FXML private TextField TextField;
+    @FXML private TextArea TextArea;
 
     @FXML
     public void getNumber()
@@ -143,5 +120,9 @@ public class Controller implements Initializable {
         }
     }
 
+    @FXML
+    public void Enter()
+    {
 
+    }
 }
