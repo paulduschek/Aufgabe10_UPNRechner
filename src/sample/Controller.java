@@ -190,4 +190,36 @@ public class Controller implements Initializable {
             System.out.println("an error occured!");
         }
     }
+
+    @FXML
+    public void multiply()
+    {
+        try {
+            double pop1 = Double.parseDouble(stack.pop());
+            double pop2 = Double.parseDouble((stack.pop()));
+            double result = pop1 * pop2;
+            stack.push(String.valueOf(result));
+            textarea.setText(String.valueOf(result));
+        }
+        catch (Exception ex)
+        {
+            System.out.println("an error occured!");
+        }
+    }
+
+    @FXML
+    public void divided()
+    {
+        try {
+            double pop1 = Double.parseDouble(stack.pop());
+            double pop2 = Double.parseDouble((stack.pop()));
+            double result = pop2 / pop1;
+            stack.push(String.valueOf(result));
+            textarea.setText(String.valueOf(result));
+        }
+        catch (Exception ex)
+        {
+            System.out.println("an error occured!");
+        }
+    }
 }
